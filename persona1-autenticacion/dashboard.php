@@ -22,7 +22,7 @@ $usuario = obtener_usuario_actual();
     </nav>
     
     <div class="dashboard">
-        <h1>✅ Tu módulo de autenticación funciona correctamente</h1>
+        <h1>✅ BIENVENIDO A RESEÑAS USAC</h1>
         
         <div class="info-card">
             <h3>Información del usuario autenticado:</h3>

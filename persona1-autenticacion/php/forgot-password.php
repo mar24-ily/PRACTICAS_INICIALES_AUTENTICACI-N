@@ -19,11 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         header('Location: ' . url('/recuperar.html'));
         exit;
     }
-    
-    // ============================================
-    // PETICIÓN AL BACKEND REAL EN PUERTO 3000
-    // ============================================
-    
+
     $resultado = api_request('/auth/reset-password', 'POST', [
         'registroAcademico' => $registro,
         'email' => $email,

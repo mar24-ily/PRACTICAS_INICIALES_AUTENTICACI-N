@@ -2,14 +2,9 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-// ============================================
-// CONFIGURACIÓN PARA EL BACKEND REAL (PUERTO 3000)
-// ============================================
-
-// Definir la URL del backend real de tus compañeros
 define('API_URL', 'http://localhost:3000');
 
-// URL base de tu frontend
+// URL base del frontend
 define('BASE_URL', '/red-social-usac/persona1-autenticacion');
 
 // Iniciar sesión
@@ -33,7 +28,6 @@ function redirect($path) {
     exit;
 }
 
-// Función para hacer peticiones a la API (adaptada para el backend en puerto 3000)
 function api_request($endpoint, $method = 'GET', $data = null, $authenticated = false) {
     $ch = curl_init(api_url($endpoint));
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);

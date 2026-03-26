@@ -18,7 +18,7 @@ function usuario_autenticado() {
 }
 
 function verificar_con_api() {
-    // Endpoint para obtener perfil (ajusta según lo que use el backend)
+    // Endpoint para obtener perfil 
     $resultado = api_request('/users/me', 'GET', null, true);
     
     if ($resultado['success'] && isset($resultado['data'])) {

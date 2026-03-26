@@ -1,7 +1,7 @@
 <?php
 require_once dirname(__DIR__) . '/php/config.php';
 
-// Cerrar sesión en el backend real
+// Cerrar sesión en el backend 
 if (isset($_SESSION['auth_token'])) {
     api_request('/auth/logout', 'POST', null, true);
 }

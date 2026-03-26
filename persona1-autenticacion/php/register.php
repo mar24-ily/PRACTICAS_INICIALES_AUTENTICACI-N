@@ -24,9 +24,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         exit;
     }
     
-    // ============================================
-    // PETICIÓN AL BACKEND REAL EN PUERTO 3000
-    // ============================================
     
     $resultado = api_request('/auth/register', 'POST', [
         'registroAcademico' => $registro,
