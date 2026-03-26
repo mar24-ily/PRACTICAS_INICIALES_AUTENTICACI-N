@@ -25,7 +25,7 @@ $usuario = obtener_usuario_actual();
         <h1>✅ BIENVENIDO A RESEÑAS USAC</h1>
         
         <div class="info-card">
-            <h3>Información del usuario autenticado:</h3>
+            <h3>Tú Información:</h3>
             <p><strong>ID:</strong> <?php echo htmlspecialchars($usuario['id']); ?></p>
             <p><strong>Nombre:</strong> <?php echo htmlspecialchars($usuario['nombre']); ?></p>
             <p><strong>Email:</strong> <?php echo htmlspecialchars($usuario['email']); ?></p>
